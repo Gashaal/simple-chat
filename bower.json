@@ -1,0 +1,24 @@
+{
+  "name": "simple-chat",
+  "homepage": "https://github.com/Gashaal/simple-chat",
+  "authors": [
+    "Dyachenko Roman <antinaar@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "keywords": [
+    "chat",
+    "nodejs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic": "semantic-ui#^2.2.4"
+  }
+}

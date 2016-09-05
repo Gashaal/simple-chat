@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Simple chat</title>
+	<link rel="stylesheet" type="text/css" href="bower_components/semantic/dist/semantic.css">
+	<link rel="stylesheet" type="text/css" href="src/css/main.css">
+</head>
+<body>
+	<main>
+		<aside class="members">
+			<h3 class="ui dividing header members__header">Участники чата</h3>
+			<div class="members__list"></div>
+		</aside>
+		<div class="messages">
+			<div class="messages__list"></div>
+			<div class="messages__input-container">
+				<div class="ui fluid action input">
+					<button class="ui icon button signout">
+						<i class="sign out icon"></i>
+					</button>
+					<input type="text" placeholder="Введите сообщение" class="messages__input">
+					<button class="ui button messages__send">Отправить</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div class="ui page active dimmer">
+		<div class="content">
+			<div class="center">
+				<div class="ui input login-container">
+					<input type="text" placeholder="Введите логин" class="login__input">
+					<div class="ui error message login__error">
+                    	<div class="header"></div>
+                	</div>
+					<button class="ui button login__button">Войти</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/semantic/dist/semantic.min.js"></script>
+	<script src="src/js/main.js"></script>
+
+	<script>
+		app.init();
+	</script>
+</body>
+</html>

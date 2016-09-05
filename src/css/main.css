@@ -1,0 +1,115 @@
+main {
+	display: flex;
+	height: 100%;
+}
+
+.members {
+	width: 220px;
+	background: #303e4d;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+}
+
+.members__list {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	overflow: auto;
+}
+
+.members__header {
+	color: #fffdfd !important;
+    text-align: center;
+    padding: 10px !important;
+    margin-bottom: 5px !important;
+}
+
+.members__item {
+	color: #8b939c;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 2px 10px;
+}
+
+.current-user {
+	display: flex;
+	align-items: center;
+}
+
+.current-user > span {
+	min-height: 10px;
+    min-width: 10px;
+    background-color: #94e864;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+.messages {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.messages__list {
+	flex: 1;
+	padding: 10px 20px;
+}
+
+.message {
+	font-size: 1.15em;
+}
+
+.message__userinfo {
+	font-weight: bold;
+}
+
+.message__time, .message__username {
+	font-weight: bold;
+	font-style: italic;
+	margin-right: 5px;
+}
+
+.signout {
+	margin-right: 10px !important;
+}
+
+.messages__input-container {
+	height: 65px;
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+}
+
+.messages__input-container .ui.action.input {
+	flex: 1;
+}
+
+.messages__input {
+    height: 42px;
+}
+
+.login-container {
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+    width: 400px;
+}
+
+.ui.page.dimmer {
+    background-color: #303e4d;
+}
+
+.login__input {
+    text-align: center !important;
+}
+
+.login__error {
+	display: none;
+	margin: 10px 0px 0px 0px !important;
+}
+
+.login__button {
+    margin: 10px 0px !important;
+}
